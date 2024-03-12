@@ -1,5 +1,184 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+nav{
+    background: black;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+}
+label.logo{
+    color:white;
+    font-size: 45px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px ;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+a:active,a:hover{
+    color:red ;
+    transition: .5s;
+}
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+
+}
+#check{
+    display: none;
+}
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height:2000px;
+    overflow: hidden;
+   
+    
+  }
+  
+  .repeated-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    
+  }
+ .about{
+    position:absolute;
+    top:105vh;
+    font-size: 50px;
+    color: white;
+    padding: 80px;
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    z-index: -3;
+
+  }
+
+
+  
+.stills .header {
+    text-align: center;
+  }
+  
+  .stills .header h1{
+    color: white;
+    margin: 20px;
+  }
+ .stills .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+ 
+  .stills .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .stills .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+
+@media(max-width:952px){
+    label.logo{
+        
+        padding-left: 50px;
+    }
+    nav ul li a{
+       
+    }
+   
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:wheat;
+        
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color:red;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+    .stills .column {
+        flex: 50%;
+        max-width: 50%;
+      }
     
 }
+ @media (max-width: 600px) {
+   .stills .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    label.logo{
+        font-size: 25px;
+    }
+    
+   
+  }

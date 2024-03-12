@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Whisper&display=swap" rel="stylesheet">
+
+
+    <title>portfolio</title>
 </head>
 <body>
-    hey the quikck jgkj
+   <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label class="logo">Shams T.</label>
+    <ul>
+        <li><a class="active" href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#stills">stills</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+   </nav>
+
+   <div class="video-container" id="#home">
+        <video autoplay muted loop class="repeated-video" style="opacity: 0.6;">
+         <source src="assets/snake.mp4" type="video/mp4">
+        </video>
+        <div class="about" id="about">
+        <h1>Hi</h1><p>Hello! I'm Shams Tabrez, a passionate photographer based in Bhagalplur, Bihar, India. With a love for storytelling and a keen eye for detail, I     specialize in capturing moments that are as authentic as they are beautiful.
+
+            Photography has been my lifelong passion.
+            
+            I believe in the power of light and shadow to create depth and mood in my photos, and I'm constantly inspired by the world around me.
+            
+            
+            When I'm not behind the lens, you can often find me exploring the great outdoors, seeking out new adventures and hidden gems to photograph and I believe that my experiences outside of photography enrich my work and allow me to see the world in new and exciting ways.</p>
+        </div>
+  </div>
+
+  <div class="stills" id="stills">
+     <div class="header">
+        <h1>Stills</h1>
+      </div>
+      
+      <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+          <img src="assets/img1.jpg" style="width:100%">
+          <img src="assets/img2.jpg" style="width:100%">
+          <img src="assets/img3.jpg" style="width:100%">
+          <img src="assets/img4.jpg" style="width:100%">
+          <img src="assets/img5.jpg" style="width:100%">
+          <img src="assets/img6.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="column">
+          <img src="assets/img8.jpg" style="width:100%">
+          <img src="assets/img9.jpg" style="width:100%">
+          <img src="assets/img10.jpg" style="width:100%">
+          <img src="assets/img11.jpg" style="width:100%">
+          <img src="assets/img12.jpg" style="width:100%">
+          <img src="assets/img13.jpg" style="width:100%">
+        </div> 
+         
+        <div class="column">
+          <img src="assets/img14.jpg" style="width:100%">
+          <img src="assets/img15.jpg" style="width:100%">
+          <img src="assets/img16.jpg" style="width:100%">
+          <img src="assets/img17.jpg" style="width:100%">
+          <img src="assets/img18.jpg" style="width:100%">
+          <img src="assets/img19.jpg" style="width:100%">
+        </div>
+        
+        <div class="column">
+          <img src="assets/img21.jpg" style="width:100%">
+          <img src="assets/img1.jpg" style="width:100%">
+          <img src="assets/img20.jpg" style="width:100%">
+          <img src="assets/img7.jpg" style="width:100%">
+          <img src="assets/img9.jpg" style="width:100%">
+          <img src="assets/img11.jpg" style="width:100%">
+        </div>
+      </div>
+
+  </div>
+
+
+  
 </body>
 </html>
